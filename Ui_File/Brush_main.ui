@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>621</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sceneRect">
+       <rectf>
+        <x>0.000000000000000</x>
+        <y>0.000000000000000</y>
+        <width>10.000000000000000</width>
+        <height>10.000000000000000</height>
+       </rectf>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="resizeAnchor">
+       <enum>QGraphicsView::AnchorViewCenter</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="actionLoad"/>
+   </widget>
+   <widget class="QMenu" name="menu_Brush">
+    <property name="title">
+     <string>&amp;Brush</string>
+    </property>
+    <widget class="QMenu" name="menu_Color">
+     <property name="title">
+      <string>&amp;Color</string>
+     </property>
+     <addaction name="action_REd"/>
+     <addaction name="action_Yellow"/>
+     <addaction name="action_Green"/>
+     <addaction name="action_Blue"/>
+     <addaction name="action_Black"/>
+    </widget>
+    <addaction name="action_Size"/>
+    <addaction name="menu_Color"/>
+   </widget>
+   <widget class="QMenu" name="menuPolygon">
+    <property name="title">
+     <string>&amp;Polygon</string>
+    </property>
+    <addaction name="action_Poly"/>
+    <addaction name="action_Circle"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_Brush"/>
+   <addaction name="menuPolygon"/>
+  </widget>
+  <action name="action_Poly">
+   <property name="text">
+    <string>&amp;Polygon</string>
+   </property>
+  </action>
+  <action name="action_Circle">
+   <property name="text">
+    <string>&amp;Circle</string>
+   </property>
+  </action>
+  <action name="action_3pt">
+   <property name="text">
+    <string>&amp;3pt</string>
+   </property>
+  </action>
+  <action name="action_5pt">
+   <property name="text">
+    <string>&amp;5pt</string>
+   </property>
+  </action>
+  <action name="action_7pt">
+   <property name="text">
+    <string>&amp;7pt</string>
+   </property>
+  </action>
+  <action name="action_REd">
+   <property name="text">
+    <string>&amp;Red</string>
+   </property>
+  </action>
+  <action name="action_Yellow">
+   <property name="text">
+    <string>&amp;Yellow</string>
+   </property>
+  </action>
+  <action name="action_Green">
+   <property name="text">
+    <string>&amp;Green</string>
+   </property>
+  </action>
+  <action name="action_Blue">
+   <property name="text">
+    <string>&amp;Blue</string>
+   </property>
+  </action>
+  <action name="action_New">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="action_Size">
+   <property name="text">
+    <string>&amp;Size</string>
+   </property>
+  </action>
+  <action name="action_Black">
+   <property name="text">
+    <string>&amp;Black</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

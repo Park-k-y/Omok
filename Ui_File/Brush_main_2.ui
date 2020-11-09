@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_FIle">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Load"/>
+   </widget>
+   <widget class="QMenu" name="menu_Brush">
+    <property name="title">
+     <string>&amp;Brush</string>
+    </property>
+    <widget class="QMenu" name="menu_Color">
+     <property name="title">
+      <string>&amp;Color</string>
+     </property>
+     <addaction name="action_Red"/>
+     <addaction name="action_Yellow"/>
+     <addaction name="action_Green"/>
+     <addaction name="action_Blue"/>
+     <addaction name="action_Black"/>
+    </widget>
+    <addaction name="action_Size"/>
+    <addaction name="menu_Color"/>
+   </widget>
+   <widget class="QMenu" name="menu_Poly">
+    <property name="title">
+     <string>&amp;Poly</string>
+    </property>
+    <addaction name="action_Polygon"/>
+    <addaction name="action_Circle"/>
+   </widget>
+   <addaction name="menu_FIle"/>
+   <addaction name="menu_Brush"/>
+   <addaction name="menu_Poly"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_New">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="action_Load">
+   <property name="text">
+    <string>&amp;Load</string>
+   </property>
+  </action>
+  <action name="action_Size">
+   <property name="text">
+    <string>&amp;Size</string>
+   </property>
+  </action>
+  <action name="action_Polygon">
+   <property name="text">
+    <string>&amp;Polygon</string>
+   </property>
+  </action>
+  <action name="action_Circle">
+   <property name="text">
+    <string>&amp;Circle</string>
+   </property>
+  </action>
+  <action name="action_Red">
+   <property name="text">
+    <string>&amp;Red</string>
+   </property>
+  </action>
+  <action name="action_Yellow">
+   <property name="text">
+    <string>&amp;Yellow</string>
+   </property>
+  </action>
+  <action name="action_Green">
+   <property name="text">
+    <string>&amp;Green</string>
+   </property>
+  </action>
+  <action name="action_Blue">
+   <property name="text">
+    <string>&amp;Blue</string>
+   </property>
+  </action>
+  <action name="action_Black">
+   <property name="text">
+    <string>&amp;Black</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
