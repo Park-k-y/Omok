@@ -1,4 +1,4 @@
-from omok_cui_modify import Omok_cui
+from omok_cui import Omok_cui
 
 game = Omok_cui()
 

@@ -1,4 +1,4 @@
-from omok_modify import Omok
+from omok import Omok
 
 class Omok_cui():
     def __init__(self):
@@ -16,7 +16,7 @@ class Omok_cui():
                 current_row, current_col = self.select_stone_coord()
                 exist_value = self.put_stone(self.__game.board.data, current_row, current_col)
             last_stone = self.__game.history[-1]
-            print(self.__game.count_max_sequence(last_stone))
+            # print(self.__game.count_max_sequence(last_stone))
             if self.__game.win_condition(last_stone) != 0:
                 break
             self.__game.switch_turn()
@@ -71,7 +71,3 @@ class Omok_cui():
         row, col = input("[row, col]\n").split(',')
 
         return int(row), int(col)
-
-    
-        # coordinate = x,y
-    # omok.action(x,y,color)

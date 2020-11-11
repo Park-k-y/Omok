@@ -1,4 +1,4 @@
-from board_modify import Board
+from board import Board
 
 class Omok():
     def __init__(self):
@@ -20,7 +20,7 @@ class Omok():
          
     def is_stone_existed(self, stone):
         for i in range(len(self.__history)):
-            if stone.get_coord() in self.__history[i].get_coord():
+            if stone.get_coord() == self.__history[i].get_coord():
                 return True
         else:
             return False

@@ -13,10 +13,13 @@ class Board():
     
     def new_board(self):
         board = []
-        for row in range(1,self.__max_row):
+        for row in range(0,self.__max_row):
             board_list_row = []
-            for col in range(1,self.__max_col):
-                board_list_row.append("0")
+            for col in range(0,self.__max_col):
+                if row == 0 or col == 0:
+                    board_list_row.append(None)
+                else:
+                    board_list_row.append("0")
             board.append(board_list_row)
         return board
 
